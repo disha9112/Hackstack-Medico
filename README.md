@@ -28,6 +28,7 @@
         <li><a href="#challenges-we-ran-into">Challenges we ran into</a></li>
         <li><a href="#accomplishments">Accomplishments</a></li>
         <li><a href="#what-we-learnt">What we learnt</a></li>
+        <li><a href="#future-scope">Future Scope</a></li>
       </ul>
     </li>
     <li>
@@ -109,6 +110,18 @@
 <li>Building a full stack website was a new yet exciting challenge for us, but once we got the hang of it, we divided the tasks and collaborated efficiently.</li>
 
 <li>We worked with a few packages and libraries for the first time, like Material UI, Chart.js, etc. The BMI calculator component had to be built from scratch.</li>
+</ul>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+### Future Scope 🤔
+
+<ul>
+<li>Health and lifestyle related blogs for the readers among our users.</li>
+
+<li>Adding chemists to the website, so that the added burden of traveling huge distances for medicines gets reduced for the patients.</li>
+
+<li>Trackers and reminders for patients to remind them to take their medicines at prescribed intervals and dosages.</li>
 </ul>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
