@@ -93,7 +93,6 @@ exports.patientPrescription = async (req, res) => {
   });
 };
 
-
 //this will update the profile of doctor
 exports.updateDoctorProfile = async (req, res) => {
   if (!req.params.id)
@@ -130,7 +129,7 @@ exports.getDoctorAppointments = async (req, res) => {
       .send({ status: false, message: "Doctor email is required" });
 
   const doctorEmail = await Doctor.findOne({
-   email: req.params.email,
+    email: req.params.email,
   });
 
   if (!doctorEmail)
@@ -143,7 +142,7 @@ exports.getDoctorAppointments = async (req, res) => {
     doctorEmail: req.params.email,
   });
 
-  if (appointments.length===0) {
+  if (appointments.length === 0) {
     return res.status(400).send({
       status: false,
       message: "This doctor has no recorded appointments",

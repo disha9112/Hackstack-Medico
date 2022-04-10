@@ -129,34 +129,34 @@ exports.updatePatient = async (req, res) => {
 //get the appointments for the patient
 exports.getPatientAppointments = async (req, res) => {
   if (!req.params.email)
-  res
-    .status(400)
-    .send({ status: false, message: "Patient email is required" });
+    res
+      .status(400)
+      .send({ status: false, message: "Patient email is required" });
 
-const patientEmail = await Patient.findOne({
- email: req.params.email,
-});
-
-if (!patientEmail)
-  return res.status(400).send({
-    status: false,
-    message: "No registered patient found for this email",
+  const patientEmail = await Patient.findOne({
+    email: req.params.email,
   });
 
-const appointments = await bookAppointment.find({
-  patientEmail: req.params.email,
-});
+  if (!patientEmail)
+    return res.status(400).send({
+      status: false,
+      message: "No registered patient found for this email",
+    });
 
-if (appointments.length===0) {
-  return res.status(400).send({
-    status: false,
-    message: "This patient has no recorded appointments",
+  const appointments = await bookAppointment.find({
+    patientEmail: req.params.email,
   });
-}
 
-return res.status(200).send({
-  status: true,
-  message: "These are the recorded appointments of the patient",
-  data: appointments,
-});
+  if (appointments.length === 0) {
+    return res.status(400).send({
+      status: false,
+      message: "This patient has no recorded appointments",
+    });
+  }
+
+  return res.status(200).send({
+    status: true,
+    message: "These are the recorded appointments of the patient",
+    data: appointments,
+  });
 };
