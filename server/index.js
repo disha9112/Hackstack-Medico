@@ -1,9 +1,8 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
-// const auth = require("./routes/authRoutes");
-// const api = require("./routes/moreRoutes");
-// const patient = require("./routes/patientRoutes");
+const auth = require("./routes/authRoutes");
+const patient = require("./routes/patientRoutes");
 // const doctor = require("./routes/doctorRoutes");
 
 require("dotenv").config();
@@ -25,9 +24,8 @@ connection.once("open", () => {
   console.log("Connected to database");
 });
 
-// app.use("/auth", auth);
-// app.use("/api", api);
-// app.use("/patient", patient);
+app.use("/auth", auth);
+app.use("/patient", patient);
 // app.use("/doctor", doctor);
 
 app.get("/", (req, res) => {
