@@ -1,0 +1,144 @@
+.dashboard-container{
+    margin:20px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    width:100%;
+    align-items:center;
+}
+
+.dashboard-container *{
+    list-style: none;
+}
+
+.profile-card-container{
+    width: 400px;
+    height: 500px;  
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding:20px;
+    background-color:white;
+    box-shadow: rgba(50, 50, 93, 0.25)
+                0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    margin-bottom:30px;
+}
+
+#profile-image{
+    max-width:100px;
+    max-height:100px;
+    border-radius:50%;
+
+}
+.double-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:500px;
+    margin-bottom:30px;
+}
+.blood-group{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    background-color:white;
+    box-shadow: rgba(50, 50, 93, 0.25)
+                0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    width:350px;
+    height:200px;
+    padding:20px;
+}
+
+.age-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+    background-color:white;
+    box-shadow: rgba(50, 50, 93, 0.25)
+                0px 50px 100px -20px,
+                rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    width:350px;
+    height:200px;
+    padding:20px;
+}
+.profile-info{
+    padding:10px;
+}
+
+.inner-circle{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color:rgb(83, 190, 69);
+    display:flex;
+    align-items: center;
+    font-size:1.3rem;
+    justify-content: center;
+    color:white;
+    text-shadow: rgba(0,0,0,0.1);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.prescription-container{
+    width: 400px;
+    height: 500px;
+    text-shadow: rgba(0,0,0,0.1);
+    box-shadow: rgba(50, 50, 93, 0.25)
+    0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    background-color:white;
+    padding:20px;
+    margin-bottom:30px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.prescription-item{
+    display:flex;
+    justify-content:space-between;
+}
+
+.prescription-item *{
+    padding: 0px 7px;
+}
+
+.prescription-list{
+    display:flex;
+    height:100%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.med-history-container{
+    min-width:96%;
+    height:400px;
+    box-shadow: rgba(50, 50, 93, 0.25)
+    0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    background-color:white; 
+    padding:20px;
+}
+
+.med-history-list{
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.med-history{
+    display:flex;
+    justify-content:space-between;
+}

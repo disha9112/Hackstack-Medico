@@ -1,0 +1,34 @@
+.doctor-patient-card-container{
+    display: flex;
+    width: 70%;
+    height: 92vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.doctor-patient-card-container a{
+    width: 100%;
+}
+
+.singup-overall-card{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.singup-overall-card img{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .doctor-patient-card-container {
+        flex-direction: column;
+        height: auto;
+    }
+}
