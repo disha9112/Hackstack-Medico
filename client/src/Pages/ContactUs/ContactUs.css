@@ -58,6 +58,7 @@ button {
   height: 80px;
   margin-bottom: 10px;
   resize: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .contact-us-form-form button {
