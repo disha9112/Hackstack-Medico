@@ -1,0 +1,29 @@
+.navigation {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  width: 80%;
+}
+
+.navigation-heading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Test ------------------------ Media Queries -------------------------------- */
+
+@media (max-width: 1100px) {
+  .navigation {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .navigation-heading {
+    margin-bottom: 0px;
+  }
+}

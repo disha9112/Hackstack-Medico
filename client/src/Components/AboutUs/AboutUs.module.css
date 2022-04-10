@@ -1,0 +1,25 @@
+.heading {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px auto 0px auto;
+}
+
+.about-us-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+@media (max-width: 850px) {
+  .about-us-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .about-us-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
