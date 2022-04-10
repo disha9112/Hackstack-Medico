@@ -2,7 +2,7 @@ import React from 'react'
 
 function BookAppointment() {
   return (
-    <div>BookAppointment</div>
+    <div>This form is in progress</div>
   )
 }
 
