@@ -1,23 +1,36 @@
 const express = require("express");
 const Patient = require("../../models/patientModel");
 const Doctor = require("../../models/doctorModel");
+const Prescription = require("../../models/prescriptionModel");
 const bookAppointment = require("../../models/appointmentModel");
 
-//book an appointment for a patient
-exports.bookAppointment = async (req, res) => {
+//this is the prescription of patient
+exports.patientPrescription = async (req, res) => {
   const patientName = req.body.patientName;
   const patientEmail = req.body.patientEmail;
   const doctorEmail = req.body.doctorEmail;
   const dateofAppointment = req.body.dateofAppointment;
   const phoneNumber = req.body.phoneNumber;
-  const department = req.body.department;
-  const gender = req.body.gender;
-  const symptoms = req.body.symptoms;
+  const medicine = req.body.medicine;
+  const comments = req.body.comments;
 
   const nameRegex = /^[a-zA-Z\-]+$/;
   const phoneNumberRegex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
   const emailRegex =
     /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+
+  if (
+    !patientName ||
+    !dateofAppointment ||
+    !phoneNumber ||
+    !medicine ||
+    !comments
+  ) {
+    return res.status(400).send({
+      status: false,
+      message: "Fields cannot be empty",
+    });
+  }
 
   if (!nameRegex.test(patientName)) {
     return res.status(400).send({
@@ -47,24 +60,7 @@ exports.bookAppointment = async (req, res) => {
     });
   }
 
-  if (
-    !patientName ||
-    !patientEmail ||
-    !doctorEmail ||
-    !dateofAppointment ||
-    !phoneNumber ||
-    !department ||
-    !gender ||
-    !symptoms
-  ) {
-    return res.status(400).send({
-      status: false,
-      message: "Please fill all the fields",
-    });
-  }
-
-  //Check if the email already exists
-  const patientExists = await Patient.exists({ email: patientEmail });
+  const patientExists = await Patient.exists({ patientEmail: patientEmail });
   if (!patientExists) {
     return res.status(400).send({
       status: false,
@@ -80,83 +76,82 @@ exports.bookAppointment = async (req, res) => {
     });
   }
 
-  const newPatientAppointment = await bookAppointment.create({
+  const newPrescription = await Prescription.create({
     patientName: patientName,
     patientEmail: patientEmail,
     doctorEmail: doctorEmail,
     dateofAppointment: dateofAppointment,
     phoneNumber: phoneNumber,
-    department: department,
-    gender: gender,
-    symptoms: symptoms,
+    medicine: medicine,
+    comments: comments,
   });
 
   return res.status(200).send({
     status: true,
-    message: "Appointment booked",
-    newPatientAppointment: newPatientAppointment,
+    message: "Prescription uploaded successfully",
+    prescription: newPrescription,
   });
 };
 
-//update the details of a patient
-exports.updatePatient = async (req, res) => {
+//this will update the profile of doctor
+exports.updateDoctorProfile = async (req, res) => {
   if (!req.params.id)
-    res.status(400).send({ status: false, message: "Patient id is required" });
+    res.status(400).send({ status: false, message: "Id is required" });
 
-  const id = await Patient.findOne({ _id: req.params.id });
+  const id = await Doctor.findOne({ _id: req.params.id });
   if (!id)
     return res.status(400).send({
       status: false,
-      message: "User with provided id not found",
+      message: "Provided id not found",
     });
 
-  await Patient.findByIdAndUpdate(req.params.id, req.body).catch((err) => {
+  await Doctor.findByIdAndUpdate(req.params.id, req.body).catch((err) => {
     res.status(400).send({
       status: false,
       message: err.message,
     });
   });
 
-  const updatedPatient = await User.findOne({ _id: req.params.id });
+  const updatedProfile = await Doctor.findOne({ _id: req.params.id });
 
   res.status(200).send({
     status: true,
     message: "Data updated",
-    data: updatedPatient,
+    data: updatedProfile,
   });
 };
 
-//get the appointments for the patient
-exports.getPatientAppointments = async (req, res) => {
+//geting the appointments of a doctor
+exports.getDoctorAppointments = async (req, res) => {
   if (!req.params.email)
     res
       .status(400)
-      .send({ status: false, message: "Patient email is required" });
+      .send({ status: false, message: "Doctor email is required" });
 
-  const patientEmail = await Patient.findOne({
+  const doctorEmail = await Doctor.findOne({
     email: req.params.email,
   });
 
-  if (!patientEmail)
+  if (!doctorEmail)
     return res.status(400).send({
       status: false,
-      message: "No registered patient found for this email",
+      message: "Provided email not found in any appointments",
     });
 
   const appointments = await bookAppointment.find({
-    patientEmail: req.params.email,
+    doctorEmail: req.params.email,
   });
 
   if (appointments.length === 0) {
     return res.status(400).send({
       status: false,
-      message: "This patient has no recorded appointments",
+      message: "This doctor has no recorded appointments",
     });
   }
 
   return res.status(200).send({
     status: true,
-    message: "These are the recorded appointments of the patient",
+    message: "These are the recorded appointments of the doctor",
     data: appointments,
   });
 };

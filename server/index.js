@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const auth = require("./routes/authRoutes");
 const patient = require("./routes/patientRoutes");
-// const doctor = require("./routes/doctorRoutes");
+const doctor = require("./routes/doctorRoutes");
 
 require("dotenv").config();
 
@@ -26,7 +26,7 @@ connection.once("open", () => {
 
 app.use("/auth", auth);
 app.use("/patient", patient);
-// app.use("/doctor", doctor);
+app.use("/doctor", doctor);
 
 app.get("/", (req, res) => {
   res.send("Hello World!");

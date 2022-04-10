@@ -1,5 +1,5 @@
 const express = require("express");
-const Patient=require("../../models/patientModel");
+const Patient = require("../../models/patientModel");
 const Doctor = require("../../models/doctorModel");
 
 exports.login = async (req, res) => {
@@ -10,15 +10,15 @@ exports.login = async (req, res) => {
   if (!name || !password || !email) {
     return res.status(400).send({
       status: false,
-      message: "Fields cannot be empty"
+      message: "Fields cannot be empty",
     });
   }
 
   const patientEmailExists = await Patient.exists({ email: email });
-  const doctorEmailExists=await Doctor.exists({email:email});
+  const doctorEmailExists = await Doctor.exists({ email: email });
 
-  if (!(patientEmailExists||doctorEmailExists) ){
-         return res.status(400).send({
+  if (!(patientEmailExists || doctorEmailExists)) {
+    return res.status(400).send({
       status: false,
       message: "No one with this email exists",
     });
@@ -43,18 +43,16 @@ exports.login = async (req, res) => {
   }
 
   const patientExists = await Patient.exists({ email: email });
-  const doctorExists=await Doctor.exists({email:email});
+  const doctorExists = await Doctor.exists({ email: email });
   if (patientExists) {
     return res.status(200).send({
       status: true,
       message: "Patient logged in",
     });
+  } else {
+    return res.status(200).send({
+      status: true,
+      message: "Doctor logged in",
+    });
   }
-    else{
-      return res.status(200).send({
-        status: true,
-        message: "Doctor logged in",
-      });
-
-    }
-  }
+};
