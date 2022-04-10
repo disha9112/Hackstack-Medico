@@ -24,10 +24,10 @@
       <ul>
         <li><a href="#inspiration">Inspiration</a></li>
         <li><a href="#features">Features</a></li>
+        <li><a href="#built-with">Built With</a></li>
         <li><a href="#challenges-we-ran-into">Challenges we ran into</a></li>
         <li><a href="#accomplishments">Accomplishments</a></li>
         <li><a href="#what-we-learnt">What we learnt</a></li>
-        <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
     <li>
@@ -49,7 +49,7 @@
 
 <!-- ![alt text](https://user-images.githubusercontent.com/78133928/162620011-957a75a9-9458-4178-9a98-25f92ae3e9aa.png) -->
 
-### Inspiration
+### Inspiration 💡
 
 <ul>
 <li>The past two years have been a testimony to the fact that the medical sector still lacks in proper mitigation and tending to needs of patients of all backgrounds, in the face of disasters like pandemics. Millions of people were locked in their homes, thus restricitng smooth offline access to hospitals and healthcare centers.</li>
@@ -59,7 +59,7 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Features
+### Features 🚀
 
 <ul>
 <li>The users get to access various links and functionalities of the website here, right from understanding through 'About Us' to signing up on the website.</li>
@@ -75,7 +75,7 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Built With
+### Built With 🧰
 
 - [MongoDB](https://www.mongodb.com/)
 - [Express.js](https://expressjs.com/)
@@ -85,7 +85,7 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Challenges we ran into
+### Challenges we ran into ❓
 
 <ul>
 <li>No one was very much familiar with react, so this was our chance to showcase and polish our react and frontend skills. We tried to make a decent frontend in such a short interval of time.</li>
@@ -95,7 +95,7 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Accomplishments
+### Accomplishments 🏆
 
 <ul>
 <li>Despite hectic schedules and time crunch, our team managed to successfully finish all the planned tasks for the frontend and backend features of the website, well in time. Both are running smoothly individually.</li>
@@ -103,7 +103,7 @@
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### What we learnt
+### What we learnt 🧠
 
 <ul>
 <li>Building a full stack website was a new yet exciting challenge for us, but once we got the hang of it, we divided the tasks and collaborated efficiently.</li>
@@ -119,7 +119,7 @@
 
 To get a local copy up and running follow these simple example steps.
 
-### Installation
+### Installation ✔️
 
 1. Fork the repo and clone it
    ```sh
