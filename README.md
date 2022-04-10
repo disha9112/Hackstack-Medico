@@ -19,9 +19,8 @@
 
 ## About The Project
 
-![readme](https://user-images.githubusercontent.com/78133928/162626781-c8fde24d-84d0-4334-a834-9d7302fa75cd.png)
-
-<!-- ![alt text](https://user-images.githubusercontent.com/78133928/162620011-957a75a9-9458-4178-9a98-25f92ae3e9aa.png) -->
+![Home](https://user-images.githubusercontent.com/78133928/162626781-c8fde24d-84d0-4334-a834-9d7302fa75cd.png)
+![Dashboard](https://user-images.githubusercontent.com/78133928/162630682-d73c13e4-06a0-4d59-b037-9e3a807534c0.png)
 
 ### 💡 Inspiration
 
