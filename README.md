@@ -40,6 +40,8 @@
 
 ## About The Project
 
+![alt text](https://user-images.githubusercontent.com/78133928/162626037-f4031876-1afa-4f0b-86c5-20f2be336bda.png)
+
 <!-- ![alt text](https://user-images.githubusercontent.com/78133928/162620011-957a75a9-9458-4178-9a98-25f92ae3e9aa.png) -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
