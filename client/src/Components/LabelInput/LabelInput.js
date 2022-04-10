@@ -13,7 +13,7 @@ const LabelInput = (props) => {
     const changeUserValue = (event) => {
         // console.log(event.target.value);
         if (isNaN(event.target.value))
-            onChange(event.target.value);
+            onChange(event.target.value);            
     }
 
     return (

@@ -24,6 +24,7 @@ const FooterNewsletter = (props) => {
         ></input>
         <Button>
           <SendIcon />
+          
         </Button>
       </div>
     </ul>

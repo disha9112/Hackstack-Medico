@@ -26,6 +26,7 @@ const AboutUs = () => {
             <div className={`${styles["about-us-container"]}`}>
 
                 <Cards image={imageComponent[0]} heading="Paperless">As a sector that strives to establish a healthy world, digitalization or the paperless operations system in healthcare industry is a necessity than a need.</Cards>
+                
 
                 <Cards image={imageComponent[1]} heading="Biometric">Healthcare biometrics allow users to access applications and patient data quickly - clinicians simply touch a fingerprint scanner and get instant access to the records they need on any workstation.</Cards>
 

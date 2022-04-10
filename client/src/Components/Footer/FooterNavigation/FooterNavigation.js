@@ -15,6 +15,7 @@ const FooterNavigation = (props) => {
             <li>BMI Calculator</li>
             <li>Roles</li>
             <li>Contact Us</li>
+            
         </ul>
     );
 }

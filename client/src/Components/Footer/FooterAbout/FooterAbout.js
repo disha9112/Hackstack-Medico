@@ -14,6 +14,7 @@ const FooterAbout = (props) => {
             <li>Disclaimer</li>
             <li>Membership</li>
             <li>Terms and Conditions</li>
+            
         </ul>
     );
 }

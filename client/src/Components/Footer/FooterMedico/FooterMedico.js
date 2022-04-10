@@ -23,6 +23,7 @@ const FooterMedico = (props) => {
 
       <ul className={`${styles["medico-icons"]}`}>
         <li>
+          
           <FaTwitter></FaTwitter>
         </li>
         <li>
