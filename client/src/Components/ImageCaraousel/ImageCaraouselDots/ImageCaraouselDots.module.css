@@ -1,0 +1,11 @@
+.dots {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.dots:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+}

@@ -1,0 +1,15 @@
+.image-caraousel-container {
+  width: 90%;
+  margin: auto;
+}
+
+.image-caraousel-dots {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.dont-display-image-caraousel {
+  display: none;
+}

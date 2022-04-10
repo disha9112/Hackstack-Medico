@@ -1,0 +1,55 @@
+.content-container {
+  width: 90%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
+.content-container p {
+  width: 80%;
+  margin: 5px auto 10px auto;
+}
+
+.content-container-ul {
+  width: 75%;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content-container-ul li {
+  margin-bottom: 8px;
+  list-style: none;
+}
+
+.content-container-ul li:before {
+  content: "\2713";
+  margin: 0px 8px;
+  color: red;
+}
+
+.dont-show {
+  display: none;
+}
+
+.show {
+  display: block;
+}

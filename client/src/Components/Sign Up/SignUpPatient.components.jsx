@@ -12,6 +12,8 @@ function SignUpPatient() {
   const [emailError, setEmailError] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [confirmPasswordError, setConfirmPasswordError] = useState("");
+  const [department, setDepartment] = useState("");
+  const [experience, setExperience] = useState("");
   const [gender, setGender] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [bloodGroup, setBloodGroup] = useState("");
@@ -47,6 +49,18 @@ function SignUpPatient() {
 
   const updateName = (currentValue) => {
     setName(currentValue);
+  };
+
+  const updateDepartment = (currentValue) => {
+    setDepartment(currentValue);
+  };
+
+  const updateExperience = (currentValue) => {
+    setExperience(currentValue);
+  };
+
+  const updateGender = (currentValue) => {
+    setGender(currentValue);
   };
 
   const updatePhoneNumber = (currentValue) => {
@@ -159,7 +173,7 @@ function SignUpPatient() {
             </LabelInput>
 
             <div className="signup-button-container">
-              <Button>Sign Up</Button>
+              <Button type="submit">Sign Up</Button>
             </div>
           </div>
         </div>

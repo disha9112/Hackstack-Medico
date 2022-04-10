@@ -13,14 +13,14 @@
 
 .signup-header {
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  font-weight:900;
+  font-size: 25px;
   margin-bottom: 20px;
 }
 
 .signup-form-container {
   width: 65%;
   margin: auto;
+
   display: flex;
   justify-content: center;
   align-items: center;

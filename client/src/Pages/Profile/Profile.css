@@ -1,0 +1,5 @@
+.profile-container{
+    display: flex;
+    flex-direction: row;
+    background-color: #e1e8f4;
+}
