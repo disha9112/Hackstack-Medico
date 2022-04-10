@@ -1,0 +1,47 @@
+.label-input {
+  display: flex;
+  gap: 20px;
+  max-width: 350px;
+  width: 100%;
+}
+
+.label-input input {
+  border-radius: 5px;
+  height: 30px;
+  border: 1px solid lightgray;
+}
+
+.horizontal {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin: 10px 0px;
+}
+
+.horizontal input {
+  display: block;
+  padding: 10px 2px;
+}
+
+.vertical {
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: auto;
+  gap: 5px;
+}
+
+.vertical input {
+  display: block;
+  width: 100%;
+  padding: 5px 2px;
+}
+
+.error {
+  font-family: "Poppins", sans-serif;
+  color: tomato;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
