@@ -17,7 +17,7 @@ const BMIContent = (props) => {
 
     return (
         <div className={`${styles["content-container"]}`}>
-            <div className={`${styles["heading"]} ${!isHeadingPresent && styles["dont-show"]}`}>{heading}</div>
+            <div className={`${heading == "BMI" ? styles["heading-main"] : styles["heading"]} ${!isHeadingPresent && styles["dont-show"]}`}>{heading}</div>
 
             <p className={`${type !== "1" ? styles["dont-show"] : styles["show"]}`}>{children}</p>
 

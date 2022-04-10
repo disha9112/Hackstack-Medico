@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./navbar.styles.css";
 
 const Navbar = () => {
-  const [authentication, setAuthentication] = useState(0);
+  const [authentication, setAuthentication] = useState(1);
 
   return (
     <div className="navbar">
@@ -12,9 +12,6 @@ const Navbar = () => {
         Medico
       </Link>
       <div>
-        <Link className="navbar__item_active" to="#about">
-          About Us
-        </Link>
         <Link className="navbar__item_active" to="/bmi">
           BMI Calculator
         </Link>
@@ -22,13 +19,13 @@ const Navbar = () => {
           Contact
         </Link>
         <Link
-          className={authentication ? "navbar__item" : "navbar__item_active"}
+          className={"navbar__item_active"}
           to="/register"
         >
           Register
         </Link>
         <Link
-          className={authentication ? "navbar__item" : "navbar__item_active"}
+          className={"navbar__item_active"}
           to="/login"
         >
           Login

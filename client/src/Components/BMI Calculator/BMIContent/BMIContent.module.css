@@ -8,8 +8,20 @@
   justify-content: center;
 }
 
+.heading-main{
+  font-size: 35px;
+  font-weight: bold;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 20px;
+}
+
 .heading {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   margin: auto;
 
