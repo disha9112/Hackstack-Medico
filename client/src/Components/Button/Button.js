@@ -11,7 +11,6 @@ const Button = (props) => {
 
     return (
         <button type={props.type} className={`${isReverse ? styles["button-reverse"] : styles["button"]}`}>{props.children}</button>
-        
     );
 }
 

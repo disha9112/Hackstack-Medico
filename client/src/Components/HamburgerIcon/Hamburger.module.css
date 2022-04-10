@@ -1,0 +1,11 @@
+.hamburger-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.line {
+    height: 5px;
+    width: 30px;
+    background-color: black;
+}

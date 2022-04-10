@@ -3,7 +3,6 @@ import { validateEmail } from "./utils";
 import usePasswordValidator from "./usePasswordValidator";
 import LabelInput from "../LabelInput/LabelInput";
 import Button from "../Button/Button";
-import axios from "axios";
 
 import styles from "./SignUp.module.css";
 
@@ -164,9 +163,10 @@ function SignUpDoctor() {
             </LabelInput>
 
             <div className={`${styles["signup-button-container"]}`}>
-              <Button>Sign Up</Button>
+              <Button type="submit">Sign Up</Button>
             </div>
           </div>
+
         </div>
       </form>
     </div>

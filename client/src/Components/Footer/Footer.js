@@ -34,6 +34,7 @@ const Footer = () => {
       </footer>
 
       <footer className={`${styles["footer-side-content"]}`}>
+        {/* <div></div> */}
         <p>© 2022 Medico All Rights Reserved</p>
       </footer>
     </footer>

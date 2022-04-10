@@ -23,7 +23,6 @@ const Cards = (props) => {
                 <div className={`${styles["content-heading"]}`}>{heading}</div>
                 <div className={`${styles["content"]}`}>{children}</div>
             </div>
-            
 
         </div>
     );

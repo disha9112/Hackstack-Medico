@@ -41,3 +41,25 @@
 .dropdown-content{
   display: none;
 }
+
+.horizontal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.vertical {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.title{
+  
+}
+
+.items{
+
+}
