@@ -31,8 +31,6 @@
 <li>Medico is an attempt at solving these persisting problems by ensuring a smooth transition of the medical sector network and its workings to digital platforms. Doctors and patients get to connect on a singular platform, just a few clicks away.</li>
 </ul>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### 🚀 Features
 
 <ul>
@@ -47,8 +45,6 @@
 <li>Our website is committed to security of the users, which we have achieved by using JWT and storing hashed passwords. To ensure the right data is provided to us, we have validation checks on the frontend and the backend.</li>
 </ul>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### 🧰 Built With
 
 - [MongoDB](https://www.mongodb.com/)
@@ -56,8 +52,6 @@
 - [React.js](https://reactjs.org/)
 - [Node.js](https://nodejs.org/)
 - [Material-UI](https://mui.com/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### ❓ Challenges we ran into
 
@@ -67,15 +61,11 @@
 <li>We managed to build the frontend and backend from scartch to finish, but connecting tand deploying was quite tricky.</li>
 </ul>
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 ### 🏆 Accomplishments
 
 <ul>
 <li>Despite hectic schedules and time crunch, our team managed to successfully finish all the planned tasks for the frontend and backend features of the website, well in time. Both are running smoothly individually.</li>
 </ul>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### 🧠 What we learnt
 
@@ -84,8 +74,6 @@
 
 <li>We worked with a few packages and libraries for the first time, like Material UI, Chart.js, etc. The BMI calculator component had to be built from scratch.</li>
 </ul>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### 🤔 Future Scope
 
@@ -96,8 +84,6 @@
 
 <li>Trackers and reminders for patients to remind them to take their medicines at prescribed intervals and dosages.</li>
 </ul>
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -131,8 +117,6 @@ To get a local copy up and running follow these simple example steps.
    ```sh
    npm start
    ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
 
