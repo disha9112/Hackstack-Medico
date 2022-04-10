@@ -159,7 +159,7 @@ function SignUpPatient() {
             </LabelInput>
 
             <div className="signup-button-container">
-              <Button type="submit">Sign Up</Button>
+              <Button>Sign Up</Button>
             </div>
           </div>
         </div>

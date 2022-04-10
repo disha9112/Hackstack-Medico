@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/disha9112/Hackstack-Medico">
     <img src="https://user-images.githubusercontent.com/78133928/162618617-229c8104-8701-4fcd-8d52-664f193eb73a.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -40,7 +40,7 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- ![alt text](https://user-images.githubusercontent.com/78133928/162620011-957a75a9-9458-4178-9a98-25f92ae3e9aa.png) -->
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
