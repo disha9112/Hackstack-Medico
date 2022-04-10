@@ -95,7 +95,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Fork the repo and clone it
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/disha9112/Hackstack-Medico.git
    ```
 2. Navigate to server folder and install the NPM packages
    ```sh
