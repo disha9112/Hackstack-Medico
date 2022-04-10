@@ -16,8 +16,6 @@ function SignUpDoctor() {
   const [experience, setExperience] = useState("");
   const [gender, setGender] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [bloodGroup, setBloodGroup] = useState("");
-  const [age, setAge] = useState("");
 
   const [password, setPassword, passwordError] = usePasswordValidator({
     min: 8,
@@ -65,14 +63,6 @@ function SignUpDoctor() {
 
   const updatePhoneNumber = (currentValue) => {
     setPhoneNumber(currentValue);
-  };
-
-  const updateAge = (currentValue) => {
-    setAge(currentValue);
-  };
-
-  const updateBloodGroup = (currentValue) => {
-    setBloodGroup(currentValue);
   };
 
   return (
@@ -177,95 +167,6 @@ function SignUpDoctor() {
             </div>
           </div>
 
-          {/* <div className="form-container-patient">
-            <div className="patient-header">Register as Patient</div>
-            <LabelInput
-              type="text"
-              value={name}
-              id="name"
-              name="name"
-              onChange={updateName}
-            >
-              Name
-            </LabelInput>
-
-            <LabelInput
-              value={phoneNumber}
-              type="text"
-              id="phone-number"
-              name="phone-number"
-              onChange={updatePhoneNumber}
-            >
-              Phone Number
-            </LabelInput>
-
-            <LabelInput
-              value={bloodGroup}
-              type="text"
-              id="blood-group"
-              name="blood-group"
-              onChange={updateBloodGroup}
-            >
-              Blood Group
-            </LabelInput>
-
-            <LabelInput
-              value={age}
-              type="text"
-              id="age"
-              name="age"
-              onChange={updateAge}
-            >
-              Age
-            </LabelInput>
-
-            <LabelInput
-              value={gender}
-              type="text"
-              id="email"
-              name="email"
-              onChange={setGender}
-            >
-              Gender
-            </LabelInput>
-
-            <LabelInput
-              value={email}
-              type="text"
-              id="email"
-              name="email"
-              onChange={setEmail}
-              error={emailError}
-            >
-              Email
-            </LabelInput>
-
-            <LabelInput
-              value={password}
-              type="password"
-              id="password"
-              name="password"
-              onChange={setPassword}
-              error={passwordError}
-            >
-              Password
-            </LabelInput>
-
-            <LabelInput
-              value={confirmPassword}
-              type="password"
-              id="confirmPassword"
-              name="confirmPassword"
-              onChange={setConfirmPassword}
-              error={confirmPasswordError}
-            >
-              Confirm Password
-            </LabelInput>
-
-            <div className="signup-button-container">
-              <Button type="submit">Sign Up</Button>
-            </div>
-          </div> */}
         </div>
       </form>
     </div>

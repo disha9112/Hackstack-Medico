@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./navbar.styles.css";
-import {Menu} from "@material-ui/icons"
+import Cards from "../Cards/Cards";
 
 const Navbar = () => {
   const [authentication,setAuthentication]=useState(0);
@@ -12,7 +12,7 @@ const Navbar = () => {
         Medico
       </Link>
       <div>
-        <Link className="navbar__item_active" to="/about">
+        <Link className="navbar__item_active" to="#about">
           About Us
         </Link>
         <Link className="navbar__item_active" to="/bmi">

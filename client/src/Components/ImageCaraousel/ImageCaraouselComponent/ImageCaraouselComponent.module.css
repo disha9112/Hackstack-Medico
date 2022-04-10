@@ -20,23 +20,36 @@
   width: 100%;
 }
 
+.content-container button {
+  font-size: 20px;
+}
+
 .content {
   width: 95%;
   margin: auto;
   padding: 5px;
-  font-size: 25px;
+  font-size: 20px;
+}
+
+.content-heading{
+  width: 95%;
+  margin: auto;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: start;
+  margin-bottom: 5px;
 }
 
 .content p {
-  text-align: center;
+  text-align: start;
 }
 
 .button {
   display: flex;
   width: 100%;
   justify-content: center;
-  gap: 10px;
-  font-size: 18px;
+  gap: 15px;
+  font-size: 20px;
 }
 
 .image-container {

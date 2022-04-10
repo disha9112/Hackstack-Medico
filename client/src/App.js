@@ -11,12 +11,12 @@ import ResetPassword from "./Pages/Profile/ResetPassword";
 import UpdateProfile from "./Pages/Profile/UpdateProfile";
 
 import React from "react";
-// <<<<<<< frontend-dheeraj
-// =======
 import BMICalculatorPage from "./Pages/BMI Calculator/BMICalcutor";
 import LoginPage from "./Pages/LoginPage/LoginPage";
+import SignUpOverall from "./Pages/SignUp/SignUpOverall";
 import SignUpPageDoctor from "./Pages/SignUp/SignUpPageDoctor";
 import SignUpPagePatient from "./Pages/SignUp/SignUpPagePatient";
+import ContactUsPage from "./Pages/ContactUs/ContactUs";
 // >>>>>>> main
 
 function App() {
@@ -25,7 +25,6 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          {/* // <<<<<<< frontend-dheeraj */}
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/profile" element={<Profile />}>
             <Route path="" element={<Dashboard />}></Route>
@@ -40,23 +39,25 @@ function App() {
             path="/bmi"
             element={<BMICalculatorPage></BMICalculatorPage>}
           ></Route>
-          <Route path="/registerDoctor" element={<SignUpPageDoctor></SignUpPageDoctor>}></Route>
-          <Route path="/registerPatient" element={<SignUpPagePatient></SignUpPagePatient>}></Route>
+          <Route path="/contact" element={<ContactUsPage></ContactUsPage>}></Route>
+          <Route
+            path="/register"
+            element={<SignUpOverall></SignUpOverall>}
+          ></Route>
+          <Route
+            path="/registerDoctor"
+            element={<SignUpPageDoctor></SignUpPageDoctor>}
+          ></Route>
+          <Route
+            path="/registerPatient"
+            element={<SignUpPagePatient></SignUpPagePatient>}
+          ></Route>
           <Route path="/login" element={<LoginPage></LoginPage>}></Route>
         </Routes>
       </Router>
-      {/* // ======= */}
-      {/* //           <Route path="/" element={<Homepage />}></Route>
-//           <Route path="/bmi" element={<BMICalculatorPage></BMICalculatorPage>}></Route>
-//           <Route path="/register" element={<SignUpPage></SignUpPage>}></Route>
-//           <Route path="/login" element={<LoginPage></LoginPage>}></Route> */}
-      {/* </Routes> */}
-      {/* </Router> */}
-
-      {/* // >>>>>>> main */}
     </div>
   );
-}
+  }
 
 // Test ------------------------ Exporting our current componet -------------------------------------
 export default App;
